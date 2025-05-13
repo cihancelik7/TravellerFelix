@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917235279370",
+    "project_id": "travellerfelixapp",
+    "storage_bucket": "travellerfelixapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917235279370:android:c833be39495e23e69661f3",
+        "android_client_info": {
+          "package_name": "com.example.travellerfelix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2D1mw4GhQCvWQBw2UBPYnVsCO63Fs864"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

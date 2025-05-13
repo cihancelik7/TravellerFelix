@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TravellerFelix</string>
+    <string name="hello_blank_fragment">Hej Tom Fragment</string>
+    <string name="bu_uygulama_planlarinizi_kolaylastirmak_icin_gelistirilmistir_kullandiginiz_icin_tesekkur_ederiz">Denna applikation är utvecklad för att förenkla dina planer. Tack för att du använder den!</string>
+    <string name="_2025_travellerfelix_tum_haklarisaklidir">© 2025 TravellerFelix. Alla rättigheter förbehållna.</string>
+    <string name="hotel_ad">Hotellnamn</string>
+    <string name="check_in_tarihi">Incheckningsdatum</string>
+    <string name="check_out_tarihi">Utcheckningsdatum</string>
+    <string name="check_in_zaman">Incheckningstid</string>
+    <string name="check_out_zaman">Utcheckningstid</string>
+    <string name="iptal">Avbryt</string>
+    <string name="kaydet">Spara</string>
+    <string name="hotel_plan_ekle">Lägg till hotellplan</string>
+    <string name="muze_plan_ekle">Lägg till museiplan</string>
+    <string name="muze_ad">Museinamn</string>
+    <string name="ziyaret_gun">Besöksdag</string>
+    <string name="acilis_kapanis_saati_hh_mm">Öppettider (HH:MM)</string>
+    <string name="yeni_plan_ekle">Lägg till ny plan</string>
+    <string name="lutfen_yeni_planiniza_uygun_kategoriyi_secin">Vänligen välj lämplig kategori för din nya plan</string>
+    <string name="devam">Fortsätt</string>
+    <string name="arac_kiralama_plan">Biluthyrningsplan</string>
+    <string name="firma_ad">Företagsnamn (t.ex. Sixt, Avis)</string>
+    <string name="arac_modeli">Bilmodell (t.ex. BMW X5, Tesla Model 3)</string>
+    <string name="kiralama_baslangic_tarihi">Hyresstartdatum</string>
+    <string name="kiralama_bitis_tarihi">Hyresavslutningsdatum</string>
+    <string name="teslim_alma_saati_hh_mm">Upphämtningstid (HH:MM)</string>
+    <string name="teslim_etme_saati_hh_mm">Återlämningstid (HH:MM)</string>
+    <string name="teslim_alinacak_yer">Upphämtningsplats (t.ex. Istanbuls flygplats)</string>
+    <string name="teslim_edilecek_yer">Återlämningsplats (t.ex. Istanbuls flygplats)</string>
+    <string name="tum_verileri_silmek_stediginize_emin_misiniz">Är du säker på att du vill radera all data?</string>
+    <string name="evet">Ja</string>
+    <string name="hay_r">Nej</string>
+    <string name="yorum_tavsiye"><![CDATA[Feedback & Förslag]]></string>
+    <string name="buraya_dusuncelerinizi_yazabilirsiniz">Du kan skriva dina tankar här...</string>
+    <string name="gonder">Skicka</string>
+    <string name="dil_seciniz">Välj språk</string>
+    <string name="turkce">Turkiska</string>
+    <string name="ingilizce">Engelska</string>
+    <string name="fransizca">Franska</string>
+    <string name="isvecce">Svenska</string>
+    <string name="italyanca">Italienska</string>
+    <string name="uygula">Tillämpa</string>
+    <string name="notunuzu_yazin">Skriv din anteckning...</string>
+    <string name="ulke">Land</string>
+    <string name="sehir">Stad</string>
+    <string name="secimi_kabul_et">Acceptera val</string>
+    <string name="hotel">Hotell</string>
+    <string name="restaurant">Restaurang</string>
+    <string name="muze">Museum</string>
+    <string name="toplu_tasima">Kollektivtrafik</string>
+    <string name="kiralik_arac">Hyrbil</string>
+    <string name="listele">Lista</string>
+    <string name="daha_fazla_goster">Visa mer</string>
+    <string name="verileri_temizle">Rensa data</string>
+    <string name="dil_secenegi">Språkalternativ</string>
+    <string name="rezervasyon_saati">Bokningstid:</string>
+    <string name="yapildi">Genomfört!</string>
+    <string name="acilis_kapanis">Öppning - Stängning</string>
+    <string name="not_icerigi">Anteckningsinnehåll</string>
+    <string name="teslim_alis_saati">Upphämtningstid:</string>
+    <string name="teslim_edis_saati">Återlämningstid:</string>
+    <string name="teslim_alis_konumu">Upphämtningsplats:</string>
+    <string name="teslim_edis_konumu">Återlämningsplats:</string>
+    <string name="arac_kiralama">Biluthyrning</string>
+    <string name="rezerve_gunler">Reserverad dag(ar):</string>
+    <string name="kalkis_saati">Avgångstid:</string>
+    <string name="ana_sayfa">Huvudsida</string>
+    <string name="yakin_cevre">Närliggande</string>
+    <string name="notlar">Anteckningar</string>
+    <string name="kategoriler">Kategorier</string>
+    <string name="hakkinda">Om</string>
+    <string name="henuz_eklenmis_bir_not_yok">Inga anteckningar har lagts till ännu.. ☁️</string>
+    <string name="sehir_ulke">Stad / Land</string>
+
+    <string-array name="transport_types">
+        <item>Tåg</item>
+        <item>Buss</item>
+        <item>Flyg</item>
+        <item>Fartyg</item>
+        <item>Metro</item>
+        <item>Spårvagn</item>
+        <item>Annat</item>
+    </string-array>
+</resources>

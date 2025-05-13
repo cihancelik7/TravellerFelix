@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TravellerFelix</string>
+
+    <!-- Eksik string ekleniyor -->
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
+
+    <string-array name="transport_types">
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Flight</item>
+        <item>Ship</item>
+        <item>Metro</item>
+        <item>Tram</item>
+        <item>Other</item>
+    </string-array>
+</resources>
