@@ -226,7 +226,7 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
         val country = parts.getOrNull(1)?.trim() ?: ""
 
         val bottomSheet = when (category) {
-            "Hotel" -> HotelBottomSheet(selectedDate, city)
+            "Hotel" -> HotelBottomSheet( city,country)
             "Rent a Car" -> RentBottomSheet(selectedDate, city, country)
             "Museum" -> MuseumBottomSheet(city, country)
             "Transport" -> TransportBottomSheet(city, country)
