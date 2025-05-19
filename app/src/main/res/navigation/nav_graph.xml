@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.example.travellerfelix.fragment.CalendarFragment"
+        android:name="com.example.travellerfelix.ui.fragment.CalendarFragment"
         android:label="Calendar"
         tools:layout="@layout/fragment_calendar" >
         <action
@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/nearbyFragment"
-        android:name="com.example.travellerfelix.fragment.NearbyPlacesFragment"
+        android:name="com.example.travellerfelix.ui.fragment.NearbyPlacesFragment"
         android:label="Location"
         tools:layout="@layout/fragment_nearby_places" >
         <action
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/notesFragment"
-        android:name="com.example.travellerfelix.fragment.NotesFragment"
+        android:name="com.example.travellerfelix.ui.fragment.NotesFragment"
         android:label="Notes"
         tools:layout="@layout/fragment_notes" />
 </navigation>

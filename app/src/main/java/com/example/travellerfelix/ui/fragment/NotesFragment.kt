@@ -1,4 +1,4 @@
-package com.example.travellerfelix.fragment
+package com.example.travellerfelix.ui.fragment
 
 import android.os.Bundle
 import android.view.*

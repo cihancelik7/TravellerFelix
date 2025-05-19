@@ -74,6 +74,18 @@
     <string name="henuz_eklenmis_bir_not_yok">Henüz eklenmiş bir not yok ☁️</string>
     <string name="sehir_ulke">Şehir / Ülke</string>
 
+    <string name="onboarding_title_1">Tarihe Göre Plan Yap</string>
+    <string name="onboarding_desc_1">Takvim görünümünde her güne özel planlarını ekleyebilir, tarih bazlı gezi planlamanı kolayca yönetebilirsin.</string>
+
+    <string name="onboarding_title_2">Yakın Yerleri Keşfet</string>
+    <string name="onboarding_desc_2">Restoran, otel, müze gibi yakın yerleri harita üzerinde keşfet ve gezini zenginleştir.</string>
+
+    <string name="onboarding_title_3">Notlarını Tut</string>
+    <string name="onboarding_desc_3">Gezdiğin yerlerle ilgili kişisel notlar alarak hatıralarını kaydetmeyi unutma!</string>
+
+
+    <string name="basla">Başla</string>
+
     <string-array name="transport_types">
         <item>Train</item>
         <item>Bus</item>
