@@ -193,6 +193,7 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
                 )
                 withContext(Dispatchers.Main) {
                     dayPlanAdapter.submitList(allPlans)
+                    updateEmptySateUI(allPlans)
                 }
             } catch (e: Exception) {
                 Log.e("CalendarDebug", "Veri çekilirken hata oluştu: ${e.localizedMessage}")
@@ -213,6 +214,7 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
                 }
                 withContext(Dispatchers.Main) {
                     dayPlanAdapter.submitList(plans)
+                    updateEmptySateUI(plans)
                 }
             } catch (e: Exception) {
                 Log.e("DB_TEST", "⚠️ Filtreli veri yükleme hatası: ${e.localizedMessage}")

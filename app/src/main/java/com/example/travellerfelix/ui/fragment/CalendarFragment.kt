@@ -122,6 +122,33 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
         binding.settings.setOnClickListener {
             SettingsBottomSheet().show(parentFragmentManager,"SettingsBottomSheet")
         }
+
+        binding.addEventButton.setOnClickListener {
+            val locationFragment = LocationSelectionFragment(object:LocationSelectionFragment.OnLocationSelectedListener{
+                override fun onLocationSelected(selectedCountry: String, selectedCity: String) {
+                    binding.cityAndCountryText.text = "$selectedCity / $selectedCountry"
+                    val categoryBottomSheet = CategorySelectionBottomSheet(this@CalendarFragment, currentSelectedDate)
+                    categoryBottomSheet.show(parentFragmentManager,"CategorySelectionBottomSheet")
+                }
+            })
+            locationFragment.show(parentFragmentManager,"LocationSelectionBottomSheet")
+        }
+
+    }
+    private fun updateEmptyStateUI(allPlans: AllDayPlans) {
+        val hasAnyData = allPlans.hotels.isNotEmpty()
+                || allPlans.restaurants.isNotEmpty()
+                || allPlans.transports.isNotEmpty()
+                || allPlans.restaurants.isNotEmpty()
+                || allPlans.museums.isNotEmpty()
+
+        val visibility = if (hasAnyData) View.GONE else View.VISIBLE
+
+        binding.calendarEmptyView.visibility = visibility
+        binding.emptyCalendarText.visibility = visibility
+        binding.addEventButton.visibility = visibility
+
+
     }
 
     private fun setupCalendarRecyclerView() {
@@ -193,6 +220,7 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
                 )
                 withContext(Dispatchers.Main) {
                     dayPlanAdapter.submitList(allPlans)
+                    updateEmptyStateUI(allPlans)
                 }
             } catch (e: Exception) {
                 Log.e("CalendarDebug", "Veri çekilirken hata oluştu: ${e.localizedMessage}")
@@ -213,6 +241,7 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
                 }
                 withContext(Dispatchers.Main) {
                     dayPlanAdapter.submitList(plans)
+                    updateEmptyStateUI(plans)
                 }
             } catch (e: Exception) {
                 Log.e("DB_TEST", "⚠️ Filtreli veri yükleme hatası: ${e.localizedMessage}")

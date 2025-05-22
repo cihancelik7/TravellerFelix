@@ -12,6 +12,7 @@ import com.example.travellerfelix.R
 import com.example.travellerfelix.adapter.OnboardingAdapter
 import com.example.travellerfelix.data.local.model.OnboardingItem
 import com.example.travellerfelix.databinding.ActivityOnboardingBinding
+import com.example.travellerfelix.utils.PreferenceHelper
 
 class OnboardingActivity : AppCompatActivity() {
 
@@ -40,8 +41,11 @@ class OnboardingActivity : AppCompatActivity() {
             if (currentPage < onboardingAdapter.itemCount - 1) {
                 binding.viewPager.currentItem = currentPage + 1
             } else {
-                // TODO: Onboarding bittiğinde yapılacak işlem (örneğin MainActivity'e geçiş)
-                 startActivity(Intent(this, MainActivity::class.java))
+                // ✅ Kullanıcı onboarding'i tamamladı, bir daha gösterme!
+                PreferenceHelper.setNoFirstTime(this)
+
+                // ✅ Ana ekrana geçiş
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
         }

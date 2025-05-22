@@ -113,7 +113,6 @@
             android:id="@+id/editTextDate4"
             android:layout_width="104dp"
             android:layout_height="wrap_content"
-            android:editable="false"
             android:layout_marginTop="28dp"
             android:ems="10"
             android:inputType="date"
