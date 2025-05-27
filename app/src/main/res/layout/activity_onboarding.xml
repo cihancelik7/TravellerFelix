@@ -28,6 +28,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/consentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkboxConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primaryColor"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/textConsentLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanici Sozlesmesini Oku!"
+            android:textSize="14sp"
+            android:textColor="@color/primaryColor"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+    </LinearLayout>
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"

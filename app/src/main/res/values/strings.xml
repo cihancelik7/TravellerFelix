@@ -83,6 +83,10 @@
     <string name="onboarding_title_3">Notlarını Tut</string>
     <string name="onboarding_desc_3">Gezdiğin yerlerle ilgili kişisel notlar alarak hatıralarını kaydetmeyi unutma!</string>
 
+    <string name="consent_kvkk_text">
+    TravellerFelix uygulaması, seyahat deneyiminizi geliştirmek amacıyla konum bilgilerinizi işler. Bu bilgiler üçüncü taraflarla paylaşılmaz. Uygulamayı kullanmaya devam edebilmek için KVKK metnini onaylamanız gerekmektedir.
+</string>
+
 
     <string name="basla">Başla</string>
 

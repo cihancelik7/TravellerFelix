@@ -6,14 +6,25 @@ import android.content.SharedPreferences
 object PreferenceHelper {
     private const val PREF_NAME = "travellerfelix_prefs"
     private const val IS_FIRST_TIME = "isFirstTime"
+    private const val USER_CONSENT = "userConsent" // KVKK onayı için
 
-    private fun getPreferences(context: Context):SharedPreferences{
-        return context.getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE)
+    private fun getPreferences(context: Context): SharedPreferences {
+        return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     }
-    fun isFirstTime(context: Context) : Boolean{
-        return getPreferences(context).getBoolean(IS_FIRST_TIME,true)
+
+    fun isFirstTime(context: Context): Boolean {
+        return getPreferences(context).getBoolean(IS_FIRST_TIME, true)
     }
-    fun setNoFirstTime(context: Context){
-        getPreferences(context).edit().putBoolean(IS_FIRST_TIME,false).apply()
+
+    fun setNoFirstTime(context: Context) {
+        getPreferences(context).edit().putBoolean(IS_FIRST_TIME, false).apply()
+    }
+
+    fun setUserConsent(context: Context, isAccepted: Boolean) {
+        getPreferences(context).edit().putBoolean(USER_CONSENT, isAccepted).apply()
+    }
+
+    fun hasUserGivenConsent(context: Context): Boolean {
+        return getPreferences(context).getBoolean(USER_CONSENT, false)
     }
 }

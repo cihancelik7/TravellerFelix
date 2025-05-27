@@ -1,10 +1,14 @@
 package com.example.travellerfelix.ui.activity
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
-import android.widget.LinearLayout
+import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.example.travellerfelix.MainActivity
@@ -20,6 +24,7 @@ class OnboardingActivity : AppCompatActivity() {
     private lateinit var onboardingAdapter: OnboardingAdapter
     private lateinit var dots: Array<TextView?>
     private var currentPage = 0
+    private val LOCATION_PERMISSION_REQUEST_CODE = 1001
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +39,7 @@ class OnboardingActivity : AppCompatActivity() {
                 currentPage = position
                 setupDotsIndicator(position)
                 updateButtonText(position)
+                binding.consentLayout.visibility = if (position == onboardingAdapter.itemCount - 1) View.VISIBLE else View.GONE
             }
         })
 
@@ -41,13 +47,16 @@ class OnboardingActivity : AppCompatActivity() {
             if (currentPage < onboardingAdapter.itemCount - 1) {
                 binding.viewPager.currentItem = currentPage + 1
             } else {
-                // ✅ Kullanıcı onboarding'i tamamladı, bir daha gösterme!
-                PreferenceHelper.setNoFirstTime(this)
-
-                // ✅ Ana ekrana geçiş
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
+                if (!binding.checkboxConsent.isChecked) {
+                    Toast.makeText(this, "Lütfen kullanıcı sözleşmesini kabul edin.", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
+                showConsentDialog()
             }
+        }
+
+        binding.textConsentLink.setOnClickListener {
+            showConsentDialog()
         }
     }
 
@@ -95,5 +104,63 @@ class OnboardingActivity : AppCompatActivity() {
     private fun updateButtonText(position: Int) {
         binding.nextButton.text = if (position == onboardingAdapter.itemCount - 1)
             getString(R.string.basla) else getString(R.string.devam)
+    }
+
+    private fun showConsentDialog() {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_kvkk, null)
+        val dialog = android.app.AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+            .create()
+
+        val kvkkTextView = dialogView.findViewById<TextView>(R.id.kvkkContentText)
+        kvkkTextView.text = getString(R.string.consent_kvkk_text)
+
+        dialogView.findViewById<TextView>(R.id.btnAccept).setOnClickListener {
+            PreferenceHelper.setUserConsent(this, true)
+            PreferenceHelper.setNoFirstTime(this)
+            dialog.dismiss()
+            requestLocationPermission()
+        }
+
+        dialogView.findViewById<TextView>(R.id.buttonDecline).setOnClickListener {
+            PreferenceHelper.setUserConsent(this, false)
+            PreferenceHelper.setNoFirstTime(this)
+            dialog.dismiss()
+            goToMain()
+        }
+
+        dialog.show()
+    }
+
+    private fun requestLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
+        } else {
+            goToMain()
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
+            goToMain() // kullanıcı izin verse de vermese de geçiş yapılır, kontrol MainActivity'de
+        }
+    }
+
+    private fun goToMain() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }
