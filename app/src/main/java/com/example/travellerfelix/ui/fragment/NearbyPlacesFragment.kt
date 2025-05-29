@@ -1,12 +1,9 @@
 package com.example.travellerfelix.ui.fragment
 
-import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.*
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -42,8 +39,6 @@ class NearbyPlacesFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
         recyclerView = view.findViewById(R.id.nearbyRecyclerView)
         progressBar = view.findViewById(R.id.progressBar)
         infoTextView = view.findViewById(R.id.infoTextView)
@@ -54,12 +49,18 @@ class NearbyPlacesFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
 
-        progressBar.visibility = View.GONE
-        infoTextView.visibility = View.VISIBLE
         infoTextView.text = "Lütfen bir kategori seçiniz."
+        progressBar.visibility = View.GONE
 
-        btnFetch.setOnClickListener { fetchPlaces() }
+        btnFetch.setOnClickListener {
+            fetchPlaces()
+        }
 
+        observeLocationUpdates()
+        observeNearbyPlaces()
+    }
+
+    private fun observeLocationUpdates() {
         lifecycleScope.launchWhenStarted {
             sharedLocationViewModel.currentLocation.collectLatest { location ->
                 location?.let {
@@ -74,7 +75,9 @@ class NearbyPlacesFragment : Fragment() {
                 }
             }
         }
+    }
 
+    private fun observeNearbyPlaces() {
         lifecycleScope.launchWhenStarted {
             viewModel.nearbyPlaces.collectLatest { responses ->
                 val allPlaces = responses.flatMap { it.results }
@@ -98,12 +101,6 @@ class NearbyPlacesFragment : Fragment() {
             return
         }
 
-        if (!hasLocationPermission()) {
-            infoTextView.visibility = View.VISIBLE
-            infoTextView.text = "Konum izni verilmemiş. Lütfen ayarlardan izin verin."
-            return
-        }
-
         sharedLocationViewModel.currentLocation.value?.let { location ->
             val locationString = "${location.latitude},${location.longitude}"
             progressBar.visibility = View.VISIBLE
@@ -113,11 +110,6 @@ class NearbyPlacesFragment : Fragment() {
             infoTextView.visibility = View.VISIBLE
             infoTextView.text = "Konum bulunamadı."
         }
-    }
-
-    private fun hasLocationPermission(): Boolean {
-        val fine = ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.ACCESS_FINE_LOCATION)
-        return fine == PackageManager.PERMISSION_GRANTED
     }
 
     private fun getSelectedTypes(): List<String> {

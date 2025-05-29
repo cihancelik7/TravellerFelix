@@ -1,1 +1,19 @@
-/build
+# Android specific
+/build/
+.gradle/
+.idea/
+*.iml
+local.properties
+
+# Others
+*.lock
+*.bin
+*.probe
+*.log
+workspace.xml
+fileHashes.*
+executionHistory.*
+resourceHashesCache.*
+
+# Firebase
+google-services.json

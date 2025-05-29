@@ -19,6 +19,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.travellerfelix.data.local.model.DeviceLocation
 import com.example.travellerfelix.databinding.ActivityMainBinding
+import com.example.travellerfelix.ui.fragment.LocationPermissionDialogFragment
 import com.example.travellerfelix.utils.LanguageUtil
 import com.example.travellerfelix.utils.PreferenceHelper
 import com.example.travellerfelix.viewmodel.SharedCalendarViewModel
@@ -63,6 +64,18 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             if (item.itemId == R.id.nearbyFragment) {
                 if (!PreferenceHelper.hasUserGivenConsent(this) || !hasLocationPermission()) {
+                    if (PreferenceHelper.isLocationPermissionDeferred(this)) {
+                        val dialog = LocationPermissionDialogFragment{
+                            permissionLauncher.launch(
+                                arrayOf(
+                                    Manifest.permission.ACCESS_FINE_LOCATION,
+                                    Manifest.permission.ACCESS_COARSE_LOCATION
+                                )
+                            )
+                        }
+                        dialog.show(supportFragmentManager,"LocationPermissionDialog")
+                        return@setOnItemSelectedListener false
+                    }
                     requestLocationPermission()
                     return@setOnItemSelectedListener false
                 }
@@ -87,8 +100,12 @@ class MainActivity : AppCompatActivity() {
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
             val granted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true &&
                     permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true
-            if (granted) startLocationUpdates()
-            else showPermissionSettingsDialog()
+            if (granted) {
+                PreferenceHelper.clearDeferredLocationPermission(this)
+                startLocationUpdates()
+            } else {
+                showPermissionSettingsDialog()
+            }
         }
     }
 
@@ -102,22 +119,15 @@ class MainActivity : AppCompatActivity() {
         if (!isPermissionDialogShowing) {
             isPermissionDialogShowing = true
 
-            AlertDialog.Builder(this)
-                .setTitle("İzin Gerekli")
-                .setMessage("Yakındaki yerleri görüntüleyebilmek için konum izni vermeniz gerekmektedir.")
-                .setPositiveButton("Devam") { _, _ ->
-                    permissionLauncher.launch(
-                        arrayOf(
-                            Manifest.permission.ACCESS_FINE_LOCATION,
-                            Manifest.permission.ACCESS_COARSE_LOCATION
-                        )
+            val dialog = LocationPermissionDialogFragment {
+                permissionLauncher.launch(
+                    arrayOf(
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
                     )
-                    isPermissionDialogShowing = false
-                }
-                .setNegativeButton("Vazgeç") { _, _ ->
-                    isPermissionDialogShowing = false
-                }
-                .show()
+                )
+            }
+            dialog.show(supportFragmentManager, "LocationPermissionDialog")
         }
     }
 
@@ -160,4 +170,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
+
 }

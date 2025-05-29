@@ -4,7 +4,10 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Window
+import android.view.WindowManager
 import androidx.fragment.app.DialogFragment
+import com.example.travellerfelix.R
 import com.example.travellerfelix.databinding.DialogKvkkBinding
 import com.example.travellerfelix.utils.PreferenceHelper
 
@@ -16,22 +19,34 @@ class KvkkDialogFragment(private val onConsentResult: (Boolean) -> Unit): Dialog
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         _binding = DialogKvkkBinding.inflate(LayoutInflater.from(context))
 
-        val builder = AlertDialog.Builder(requireContext())
+        val builder = AlertDialog.Builder(requireContext(), R.style.CustomDialog)
         builder.setView(binding.root)
 
         binding.kvkkContentText.text = getKvkkText()
 
         binding.btnAccept.setOnClickListener {
-            PreferenceHelper.setUserConsent(requireContext(),true)
+            PreferenceHelper.setUserConsent(requireContext(), true)
             onConsentResult(true)
             dismiss()
         }
+
         binding.buttonDecline.setOnClickListener {
-            PreferenceHelper.setUserConsent(requireContext(),false)
+            PreferenceHelper.setUserConsent(requireContext(), false)
             onConsentResult(false)
             dismiss()
         }
-        return builder.create()
+
+        val dialog = builder.create()
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.setCancelable(false)
+
+        dialog.window?.apply {
+            requestFeature(Window.FEATURE_NO_TITLE)
+            setBackgroundDrawableResource(android.R.color.transparent)
+            clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+        }
+
+        return dialog
     }
 
     private fun getKvkkText(): String {
@@ -40,13 +55,11 @@ class KvkkDialogFragment(private val onConsentResult: (Boolean) -> Unit): Dialog
             Kişisel verileriniz 3. şahıslarla paylaşılmaz. Uygulama içi bazı özelliklerin çalışabilmesi için KVKK kapsamında onayınıza ihtiyaç duyulmaktadır.
             
             Devam etmek için lütfen KVKK ve gizlilik politikasını kabul edin.
-            """.trimIndent()
+        """.trimIndent()
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
-
 }
