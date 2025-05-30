@@ -2,7 +2,6 @@ package com.example.travellerfelix.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.travellerfelix.MainActivity
 import com.example.travellerfelix.utils.PreferenceHelper

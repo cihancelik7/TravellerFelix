@@ -33,4 +33,11 @@ interface RentDao {
     @Query("SELECT * FROM rent")
     suspend fun getAllRents(): List<Rent>
 
+    @Query("""
+        SELECT * FROM rent
+        INNER JOIN day_plan ON rent.dayPlanId = day_plan.id
+        WHERE :date BETWEEN rent.pickupDate AND rent.dropOffDate
+        """)
+    suspend fun getRentsForDate(date:String) :List<Rent>
+
 }

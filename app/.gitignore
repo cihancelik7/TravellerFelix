@@ -17,3 +17,17 @@ resourceHashesCache.*
 
 # Firebase
 google-services.json
+
+# macOS
+.DS_Store
+
+# Android Studio VCS ile ilgili
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Kotlin/Java compile output
+/out/

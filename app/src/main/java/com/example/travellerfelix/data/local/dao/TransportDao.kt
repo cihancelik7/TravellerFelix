@@ -26,4 +26,7 @@ interface TransportDao {
 
     @Query("DELETE FROM transport")
     suspend fun deleteAll()
+
+    @Query("SELECT * FROM transport WHERE ticketDate = :date")
+    suspend fun getTransportForDate(date:String) : List<Transport>
 }

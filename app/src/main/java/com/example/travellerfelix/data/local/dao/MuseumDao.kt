@@ -26,4 +26,8 @@ interface MuseumDao {
 
     @Query("DELETE FROM museum")
     suspend fun deleteAll()
+
+
+    @Query("SELECT * FROM museum WHERE visitDate = :date")
+    suspend fun getMuseumForDate(date:String) : List<Museum>
 }

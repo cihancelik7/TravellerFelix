@@ -31,4 +31,11 @@ interface HotelDao {
 
     @Query("DELETE FROM hotel")
     suspend fun deleteAll()
+
+    @Query("""
+        SELECT * FROM hotel
+        INNER JOIN day_plan ON hotel.dayPlanId = day_plan.id
+        WHERE :date BETWEEN hotel.checkInDate AND hotel.checkOutDate
+        """)
+    suspend fun getHotelsForDate(date: String): List<Hotel>
 }
