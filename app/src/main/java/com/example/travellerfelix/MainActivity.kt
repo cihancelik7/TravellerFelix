@@ -17,7 +17,10 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.travellerfelix.bottomsheet.TomorrowPlanBottomSheetDialogFragment
+import com.example.travellerfelix.data.local.database.TravelDatabase
 import com.example.travellerfelix.data.local.model.DeviceLocation
+import com.example.travellerfelix.data.repository.TomorrowPlanRepository
 import com.example.travellerfelix.databinding.ActivityMainBinding
 import com.example.travellerfelix.ui.fragment.LocationPermissionDialogFragment
 import com.example.travellerfelix.utils.LanguageUtil
@@ -87,6 +90,8 @@ class MainActivity : AppCompatActivity() {
         if (PreferenceHelper.hasUserGivenConsent(this) && hasLocationPermission()) {
             startLocationUpdates()
         }
+
+        checkTomorrowPlanIntent(intent)
     }
 
     override fun onResume() {
@@ -156,6 +161,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    private fun checkTomorrowPlanIntent(intent: Intent?){
+        val showPlan = intent?.getBooleanExtra("SHOW_TOMORROW_PLAN",false)?: false
+        if (showPlan){
+            showTomorrowPlanBottomSheet()
+        }
+    }
 
     @SuppressLint("MissingPermission")
     private fun startLocationUpdates() {
@@ -169,6 +180,18 @@ class MainActivity : AppCompatActivity() {
                     sharedLocationViewModel.updateLocation(loc, Geocoder(this, Locale.getDefault()))
                 }
             }
+    }
+    private fun showTomorrowPlanBottomSheet() {
+        val repository = TomorrowPlanRepository( // gerekli DAO'ları ver
+            TravelDatabase.getDatabase(this).hotelDao(),
+            TravelDatabase.getDatabase(this).restaurantDao(),
+            TravelDatabase.getDatabase(this).transportDao(),
+            TravelDatabase.getDatabase(this).rentDao(),
+            TravelDatabase.getDatabase(this).museumDao()
+        )
+
+        val bottomSheet = TomorrowPlanBottomSheetDialogFragment(repository)
+        bottomSheet.show(supportFragmentManager, "TomorrowPlanSheet")
     }
 
 }
