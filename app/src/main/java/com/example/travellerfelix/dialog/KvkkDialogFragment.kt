@@ -19,7 +19,7 @@ class KvkkDialogFragment(private val onConsentResult: (Boolean) -> Unit): Dialog
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         _binding = DialogKvkkBinding.inflate(LayoutInflater.from(context))
 
-        val builder = AlertDialog.Builder(requireContext(), R.style.CustomDialog)
+        val builder = AlertDialog.Builder(requireContext(), R.style.CustomDialogTheme)
         builder.setView(binding.root)
 
         binding.kvkkContentText.text = getKvkkText()

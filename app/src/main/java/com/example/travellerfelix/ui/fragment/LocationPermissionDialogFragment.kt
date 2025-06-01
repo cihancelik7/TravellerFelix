@@ -16,7 +16,7 @@ class LocationPermissionDialogFragment(private val onRequestPermission: () -> Un
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val builder = AlertDialog.Builder(requireContext(), R.style.CustomDialog)
+        val builder = AlertDialog.Builder(requireContext(), R.style.CustomDialogTheme)
         val view = LayoutInflater.from(context).inflate(R.layout.dialog_location_permission,null)
 
         val btnAllow = view.findViewById<Button>(R.id.btnAllow)

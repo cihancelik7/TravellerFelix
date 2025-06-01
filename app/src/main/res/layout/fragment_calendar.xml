@@ -22,8 +22,8 @@
             android:id="@+id/dateRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
             android:background="@drawable/category_button_bg"
-            android:layout_marginTop="18dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/dateSelectorContainer" />
@@ -208,16 +208,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
     <ImageView
         android:id="@+id/calendarEmptyView"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:src="@drawable/calendarview"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/hello_blank_fragment"
-        app:layout_constraintTop_toBottomOf="@id/categorySelector"
+        android:src="@drawable/calendarview"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/categorySelector" />
 
     <TextView
         android:id="@+id/emptyCalendarText"

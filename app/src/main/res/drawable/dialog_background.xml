@@ -1,0 +1,3 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CC4CAF50" /> <!-- %80 opaklıkta yeşil -->
+</shape>

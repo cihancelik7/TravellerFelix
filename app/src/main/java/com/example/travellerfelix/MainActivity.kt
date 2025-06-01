@@ -22,6 +22,8 @@ import com.example.travellerfelix.data.local.database.TravelDatabase
 import com.example.travellerfelix.data.local.model.DeviceLocation
 import com.example.travellerfelix.data.repository.TomorrowPlanRepository
 import com.example.travellerfelix.databinding.ActivityMainBinding
+import com.example.travellerfelix.service.TomorrowPlanAlarmReceiver
+import com.example.travellerfelix.service.TomorrowPlanNotificationScheduler
 import com.example.travellerfelix.ui.fragment.LocationPermissionDialogFragment
 import com.example.travellerfelix.utils.LanguageUtil
 import com.example.travellerfelix.utils.PreferenceHelper
@@ -54,21 +56,24 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        binding.bottomNavigation.setupWithNavController(navHostFragment.navController)
-
+        // ViewModel'lar
         sharedLocationViewModel = ViewModelProvider(this)[SharedLocationViewModel::class.java]
         sharedCalendarViewModel = ViewModelProvider(this)[SharedCalendarViewModel::class.java]
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
         setupLocationCallback()
         setupPermissionLauncher()
+        createNotificationChannelIfNeeded()
+
+        // Navigation
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        binding.bottomNavigation.setupWithNavController(navHostFragment.navController)
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             if (item.itemId == R.id.nearbyFragment) {
                 if (!PreferenceHelper.hasUserGivenConsent(this) || !hasLocationPermission()) {
                     if (PreferenceHelper.isLocationPermissionDeferred(this)) {
-                        val dialog = LocationPermissionDialogFragment{
+                        val dialog = LocationPermissionDialogFragment {
                             permissionLauncher.launch(
                                 arrayOf(
                                     Manifest.permission.ACCESS_FINE_LOCATION,
@@ -76,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                                 )
                             )
                         }
-                        dialog.show(supportFragmentManager,"LocationPermissionDialog")
+                        dialog.show(supportFragmentManager, "LocationPermissionDialog")
                         return@setOnItemSelectedListener false
                     }
                     requestLocationPermission()
@@ -87,11 +92,18 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        // Konum güncelleme
         if (PreferenceHelper.hasUserGivenConsent(this) && hasLocationPermission()) {
             startLocationUpdates()
         }
 
+        // 🔔 Bildirimle gelindiyse planı göster
         checkTomorrowPlanIntent(intent)
+
+        // 🔔 Alarm zamanlayıcısını başlat (sadece 1 kez tetiklenecek şekilde çağırılmalı)
+        TomorrowPlanNotificationScheduler.scheduleNotification(this)
+      //  val testIntent = Intent(this,TomorrowPlanAlarmReceiver::class.java)
+       // sendBroadcast(testIntent)
     }
 
     override fun onResume() {
@@ -123,7 +135,6 @@ class MainActivity : AppCompatActivity() {
     private fun requestLocationPermission() {
         if (!isPermissionDialogShowing) {
             isPermissionDialogShowing = true
-
             val dialog = LocationPermissionDialogFragment {
                 permissionLauncher.launch(
                     arrayOf(
@@ -161,12 +172,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    private fun checkTomorrowPlanIntent(intent: Intent?){
-        val showPlan = intent?.getBooleanExtra("SHOW_TOMORROW_PLAN",false)?: false
-        if (showPlan){
-            showTomorrowPlanBottomSheet()
-        }
-    }
 
     @SuppressLint("MissingPermission")
     private fun startLocationUpdates() {
@@ -181,8 +186,16 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
+
+    private fun checkTomorrowPlanIntent(intent: Intent?) {
+        val showPlan = intent?.getBooleanExtra("SHOW_TOMORROW_PLAN", false) ?: false
+        if (showPlan) {
+            showTomorrowPlanBottomSheet()
+        }
+    }
+
     private fun showTomorrowPlanBottomSheet() {
-        val repository = TomorrowPlanRepository( // gerekli DAO'ları ver
+        val repository = TomorrowPlanRepository(
             TravelDatabase.getDatabase(this).hotelDao(),
             TravelDatabase.getDatabase(this).restaurantDao(),
             TravelDatabase.getDatabase(this).transportDao(),
@@ -194,4 +207,17 @@ class MainActivity : AppCompatActivity() {
         bottomSheet.show(supportFragmentManager, "TomorrowPlanSheet")
     }
 
+    private fun createNotificationChannelIfNeeded() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = android.app.NotificationChannel(
+                "tomorrow_plan_channel",
+                "Yarınki Plan Bildirimi",
+                android.app.NotificationManager.IMPORTANCE_HIGH
+            ).apply {
+                description = "Yarın için plan hatırlatmaları."
+            }
+            val manager = getSystemService(android.app.NotificationManager::class.java)
+            manager?.createNotificationChannel(channel)
+        }
+    }
 }
