@@ -139,16 +139,18 @@ class CalendarFragment : Fragment(), CategorySelectionBottomSheet.OnCategorySele
         val hasAnyData = allPlans.hotels.isNotEmpty()
                 || allPlans.restaurants.isNotEmpty()
                 || allPlans.transports.isNotEmpty()
-                || allPlans.restaurants.isNotEmpty()
+                || allPlans.rents.isNotEmpty()
                 || allPlans.museums.isNotEmpty()
 
-        val visibility = if (hasAnyData) View.GONE else View.VISIBLE
-
-        binding.calendarEmptyView.visibility = visibility
-        binding.emptyCalendarText.visibility = visibility
-        binding.addEventButton.visibility = visibility
-
-
+        if (hasAnyData) {
+            binding.calendarEmptyView.visibility = View.GONE
+            binding.emptyCalendarText.visibility = View.GONE
+            binding.addEventButton.visibility = View.GONE
+        } else {
+            binding.calendarEmptyView.visibility = View.VISIBLE
+            binding.emptyCalendarText.visibility = View.VISIBLE
+            binding.addEventButton.visibility = View.VISIBLE
+        }
     }
 
     private fun setupCalendarRecyclerView() {

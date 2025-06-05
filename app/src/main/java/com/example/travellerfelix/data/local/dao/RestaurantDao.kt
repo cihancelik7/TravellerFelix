@@ -26,7 +26,7 @@
         @Query("DELETE FROM restaurant")
         suspend fun deleteAll()
 
-        @Query("SELECT * FROM restaurant WHERE reservationTime = :date")
-        suspend fun getRestaurantsForDate(date: String) : List<Restaurant>
+        @Query("SELECT * FROM restaurant WHERE reservationDate = :date")
+        suspend fun getRestaurantsForDate(date: String): List<Restaurant>
 
     }

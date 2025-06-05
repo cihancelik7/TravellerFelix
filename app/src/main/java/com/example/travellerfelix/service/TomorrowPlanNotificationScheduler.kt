@@ -15,7 +15,7 @@ object TomorrowPlanNotificationScheduler {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             if (!alarmManager.canScheduleExactAlarms()) {
-                Log.w("TomorrowPlan", "Exact alarm için izin yok. Alarm ayarlanmadı.")
+                Log.w("TomorrowPlan", "🚫 Exact alarm için izin yok. Alarm ayarlanmadı.")
                 return
             }
         }
@@ -28,19 +28,35 @@ object TomorrowPlanNotificationScheduler {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
+        val now = System.currentTimeMillis()
+
+        val calendar = Calendar.getInstance().apply {
+            timeInMillis = now
+            add(Calendar.MINUTE, 1) // ✅ TEST: 1 dakika sonrasına alarm kur
+        }
+
+        /*
+        // 💤 GERÇEK VERSİYON (ileride aktifleştirmek için):
+        // Bu blok 22:00'de bildirim göndermek üzere hazırlanmıştır
         val calendar = Calendar.getInstance().apply {
             timeInMillis = System.currentTimeMillis()
-            add(Calendar.DATE, 0) // sadece bugünü test ediyoruz
+            add(Calendar.DATE, 0) // Bugün
             set(Calendar.HOUR_OF_DAY, 22)
             set(Calendar.MINUTE, 0)
             set(Calendar.SECOND, 0)
         }
+        */
 
         val triggerTime = calendar.timeInMillis
-        val now = System.currentTimeMillis()
+
+        alarmManager.cancel(pendingIntent) // Eski alarmı iptal et
+
+        Log.d("TomorrowPlan", "🕒 Şu anki zaman: ${Date(now)}")
+        Log.d("TomorrowPlan", "⏰ Alarm zamanı   : ${calendar.time}")
+        Log.d("TomorrowPlan", "📎 Geçmiş kontrolü: ${triggerTime <= now}")
 
         if (triggerTime <= now) {
-            Log.w("TomorrowPlan", "Alarm geçmişe ayarlanmış: ${calendar.time}")
+            Log.w("TomorrowPlan", "❌ Alarm geçmişe ayarlanmış. Alarm kurulmadı.")
             return
         }
 
@@ -50,6 +66,6 @@ object TomorrowPlanNotificationScheduler {
             pendingIntent
         )
 
-        Log.d("TomorrowPlan", "Alarm başarıyla ayarlandı: ${calendar.time}")
+        Log.d("TomorrowPlan", "✅ Alarm başarıyla kuruldu: ${calendar.time}")
     }
 }

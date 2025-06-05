@@ -2,15 +2,18 @@ package com.example.travellerfelix
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.AlarmManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -38,6 +41,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
     private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
+    private lateinit var notificationPermissionLauncher: ActivityResultLauncher<String>
 
     private lateinit var sharedLocationViewModel: SharedLocationViewModel
     private lateinit var sharedCalendarViewModel: SharedCalendarViewModel
@@ -50,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         super.attachBaseContext(LanguageUtil.setLocale(newBase, langCode))
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -64,9 +69,13 @@ class MainActivity : AppCompatActivity() {
         setupLocationCallback()
         setupPermissionLauncher()
         createNotificationChannelIfNeeded()
+        // Bildirim izni kontrolü
+        setupNotificationPermissionLauncher()
+        checkAndRequestNotificationPermission()
 
         // Navigation
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         binding.bottomNavigation.setupWithNavController(navHostFragment.navController)
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
@@ -77,7 +86,8 @@ class MainActivity : AppCompatActivity() {
                             permissionLauncher.launch(
                                 arrayOf(
                                     Manifest.permission.ACCESS_FINE_LOCATION,
-                                    Manifest.permission.ACCESS_COARSE_LOCATION
+                                    Manifest.permission.ACCESS_COARSE_LOCATION,
+                                    Manifest.permission.POST_NOTIFICATIONS
                                 )
                             )
                         }
@@ -96,14 +106,29 @@ class MainActivity : AppCompatActivity() {
         if (PreferenceHelper.hasUserGivenConsent(this) && hasLocationPermission()) {
             startLocationUpdates()
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            if (!alarmManager.canScheduleExactAlarms()) {
+                AlertDialog.Builder(this)
+                    .setTitle("Zamanlı Bildirim İzni Gerekli")
+                    .setMessage("Yarınki planlarınız için bildirim alabilmek adına sistem ayarlarında 'Kesin Alarmlara İzin Ver' seçeneğini aktif etmelisiniz.")
+                    .setPositiveButton("Ayarları Aç") { _, _ ->
+                        val intent =
+                            Intent(android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM)
+                        startActivity(intent)
+                    }
+                    .setNegativeButton("Vazgeç", null)
+                    .show()
+            }
+        }
 
-        // 🔔 Bildirimle gelindiyse planı göster
+// Bildirimle gelindiyse planı göster
         checkTomorrowPlanIntent(intent)
 
-        // 🔔 Alarm zamanlayıcısını başlat (sadece 1 kez tetiklenecek şekilde çağırılmalı)
+// Bildirim sistemini başlat
         TomorrowPlanNotificationScheduler.scheduleNotification(this)
-      //  val testIntent = Intent(this,TomorrowPlanAlarmReceiver::class.java)
-       // sendBroadcast(testIntent)
+        //  val testIntent = Intent(this,TomorrowPlanAlarmReceiver::class.java)
+        // sendBroadcast(testIntent)
     }
 
     override fun onResume() {
@@ -114,24 +139,29 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupPermissionLauncher() {
-        permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
-            val granted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true &&
-                    permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true
-            if (granted) {
-                PreferenceHelper.clearDeferredLocationPermission(this)
-                startLocationUpdates()
-            } else {
-                showPermissionSettingsDialog()
+        permissionLauncher =
+            registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
+                val granted = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true &&
+                        permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true &&
+                        (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
+                                permissions[Manifest.permission.POST_NOTIFICATIONS] == true)
+                if (granted) {
+                    PreferenceHelper.clearDeferredLocationPermission(this)
+                    startLocationUpdates()
+                } else {
+                    showPermissionSettingsDialog()
+                }
             }
-        }
     }
 
     private fun hasLocationPermission(): Boolean {
         val fine = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-        val coarse = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+        val coarse =
+            ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
         return fine == PackageManager.PERMISSION_GRANTED && coarse == PackageManager.PERMISSION_GRANTED
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun requestLocationPermission() {
         if (!isPermissionDialogShowing) {
             isPermissionDialogShowing = true
@@ -139,7 +169,8 @@ class MainActivity : AppCompatActivity() {
                 permissionLauncher.launch(
                     arrayOf(
                         Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.POST_NOTIFICATIONS
                     )
                 )
             }
@@ -152,9 +183,10 @@ class MainActivity : AppCompatActivity() {
             .setTitle("İzin Gerekli")
             .setMessage("Bu özelliği kullanabilmek için konum izni gereklidir. Lütfen ayarlardan izin verin.")
             .setPositiveButton("Ayarları Aç") { _, _ ->
-                val intent = Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-                    data = Uri.fromParts("package", packageName, null)
-                }
+                val intent =
+                    Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                        data = Uri.fromParts("package", packageName, null)
+                    }
                 startActivity(intent)
             }
             .setNegativeButton("Vazgeç", null)
@@ -218,6 +250,28 @@ class MainActivity : AppCompatActivity() {
             }
             val manager = getSystemService(android.app.NotificationManager::class.java)
             manager?.createNotificationChannel(channel)
+        }
+    }
+
+    private fun setupNotificationPermissionLauncher() {
+        notificationPermissionLauncher =
+            registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+                if (isGranted) {
+                    Log.d("NotificationPermission", "✅ Bildirim izni verildi")
+                } else {
+                    Log.w("NotificationPermission", "❌ Bildirim izni reddedildi")
+                }
+            }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    private fun checkAndRequestNotificationPermission() {
+        val permissionCheck = ContextCompat.checkSelfPermission(
+            this,
+            Manifest.permission.POST_NOTIFICATIONS
+        )
+        if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+            notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
         }
     }
 }
