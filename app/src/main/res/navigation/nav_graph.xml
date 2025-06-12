@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.travellerfelix.ui.fragment.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_historyFragment"
+            app:destination="@id/nearbyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nearbyFragment"
+        android:name="com.example.travellerfelix.ui.fragment.NearbyPlacesFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_nearby_places" >
+        <action
+            android:id="@+id/action_historyFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.travellerfelix.ui.fragment.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+</navigation>

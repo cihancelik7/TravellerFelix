@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@drawable/bottomsheet_background"
+    tools:context=".bottomsheet.LanguageBottomSheet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dil_seciniz"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/lang_tr"
+            android:text="@string/turkce"
+            android:tag="tr"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/lang_en"
+            android:text="@string/ingilizce"
+            android:tag="en"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/lang_fr"
+            android:text="@string/fransizca"
+            android:tag="fr"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/lang_sv"
+            android:text="@string/isvecce"
+            android:tag="sv"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/lang_it"
+            android:text="@string/italyanca"
+            android:tag="it"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/uygula"
+        android:textColor="@color/softWhite"
+        android:background="@drawable/no_button_bg"/>
+</LinearLayout>

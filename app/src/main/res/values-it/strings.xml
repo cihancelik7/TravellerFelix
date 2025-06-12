@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">TravellerFelix</string>
+    <string name="hello_blank_fragment">Ciao Fragment Vuoto</string>
+    <string name="bu_uygulama_planlarinizi_kolaylastirmak_icin_gelistirilmistir_kullandiginiz_icin_tesekkur_ederiz">Questa applicazione è stata sviluppata per semplificare i tuoi piani. Grazie per averla usata!</string>
+    <string name="_2025_travellerfelix_tum_haklarisaklidir">© 2025 TravellerFelix. Tutti i diritti riservati.</string>
+    <string name="hotel_ad">Nome Hotel</string>
+    <string name="check_in_tarihi">Data Check-In</string>
+    <string name="check_out_tarihi">Data Check-Out</string>
+    <string name="check_in_zaman">Ora Check-In</string>
+    <string name="check_out_zaman">Ora Check-Out</string>
+    <string name="iptal">Annulla</string>
+    <string name="kaydet">Salva</string>
+    <string name="hotel_plan_ekle">Aggiungi Piano Hotel</string>
+    <string name="muze_plan_ekle">Aggiungi Piano Museo</string>
+    <string name="muze_ad">Nome Museo</string>
+    <string name="ziyaret_gun">Giorno di Visita</string>
+    <string name="acilis_kapanis_saati_hh_mm">Orari di Apertura/Chiusura (HH:MM)</string>
+    <string name="yeni_plan_ekle">Aggiungi Nuovo Piano</string>
+    <string name="lutfen_yeni_planiniza_uygun_kategoriyi_secin">Seleziona una categoria adatta al tuo nuovo piano</string>
+    <string name="devam">Continua</string>
+    <string name="arac_kiralama_plan">Piano Noleggio Auto</string>
+    <string name="firma_ad">Nome Azienda (es. Sixt, Avis)</string>
+    <string name="arac_modeli">Modello Auto (es. BMW X5, Tesla Model 3)</string>
+    <string name="kiralama_baslangic_tarihi">Data Inizio Noleggio</string>
+    <string name="kiralama_bitis_tarihi">Data Fine Noleggio</string>
+    <string name="teslim_alma_saati_hh_mm">Ora Ritiro (HH:MM)</string>
+    <string name="teslim_etme_saati_hh_mm">Ora Consegna (HH:MM)</string>
+    <string name="teslim_alinacak_yer">Luogo di Ritiro (es. Aeroporto di Istanbul)</string>
+    <string name="teslim_edilecek_yer">Luogo di Consegna (es. Aeroporto di Istanbul)</string>
+    <string name="tum_verileri_silmek_stediginize_emin_misiniz">Sei sicuro di voler cancellare tutti i dati?</string>
+    <string name="evet">Sì</string>
+    <string name="hay_r">No</string>
+    <string name="yorum_tavsiye"><![CDATA[Feedback & Suggerimento]]></string>
+    <string name="buraya_dusuncelerinizi_yazabilirsiniz">Scrivi qui i tuoi pensieri...</string>
+    <string name="gonder">Invia</string>
+    <string name="dil_seciniz">Scegli la lingua</string>
+    <string name="turkce">Turco</string>
+    <string name="ingilizce">Inglese</string>
+    <string name="fransizca">Francese</string>
+    <string name="isvecce">Svedese</string>
+    <string name="italyanca">Italiano</string>
+    <string name="uygula">Applica</string>
+    <string name="notunuzu_yazin">Scrivi la tua nota...</string>
+    <string name="ulke">Paese</string>
+    <string name="sehir">Città</string>
+    <string name="secimi_kabul_et">Accetta la selezione</string>
+    <string name="hotel">Hotel</string>
+    <string name="restaurant">Ristorante</string>
+    <string name="muze">Museo</string>
+    <string name="toplu_tasima">Trasporto pubblico</string>
+    <string name="kiralik_arac">Auto a noleggio</string>
+    <string name="listele">Elenca</string>
+    <string name="daha_fazla_goster">Mostra di più</string>
+    <string name="verileri_temizle">Pulisci dati</string>
+    <string name="dil_secenegi">Opzione lingua</string>
+    <string name="rezervasyon_saati">Ora di prenotazione:</string>
+    <string name="yapildi">Completato!</string>
+    <string name="acilis_kapanis">Apertura - Chiusura</string>
+    <string name="not_icerigi">Contenuto della nota</string>
+    <string name="teslim_alis_saati">Ora Ritiro:</string>
+    <string name="teslim_edis_saati">Ora Consegna:</string>
+    <string name="teslim_alis_konumu">Luogo Ritiro:</string>
+    <string name="teslim_edis_konumu">Luogo Consegna:</string>
+    <string name="arac_kiralama">Noleggio Auto</string>
+    <string name="rezerve_gunler">Giorno(i) prenotato(i):</string>
+    <string name="kalkis_saati">Ora di Partenza:</string>
+    <string name="ana_sayfa">Home</string>
+    <string name="yakin_cevre">Vicino</string>
+    <string name="notlar">Note</string>
+    <string name="kategoriler">Categorie</string>
+    <string name="hakkinda">Informazioni</string>
+    <string name="henuz_eklenmis_bir_not_yok">Nessuna nota ancora aggiunta ☁️</string>
+    <string name="sehir_ulke">Città / Paese</string>
+
+    <string-array name="transport_types">
+        <item>Treno</item>
+        <item>Autobus</item>
+        <item>Volo</item>
+        <item>Nave</item>
+        <item>Metro</item>
+        <item>Tram</item>
+        <item>Altro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@drawable/bottomsheet_background"
+    tools:context=".bottomsheet.SettingsBottomSheet">
+
+
+    <TextView
+        android:id="@+id/clearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verileri_temizle"
+        android:textSize="16sp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/changeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dil_secenegi"
+        android:textSize="16sp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yorum_tavsiye"
+        android:textSize="16sp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hakkinda"
+        android:textSize="16sp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>

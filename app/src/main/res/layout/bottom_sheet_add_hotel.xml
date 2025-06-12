@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/bottomSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel_plan_ekle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/hotelName"
+        android:layout_width="match_parent"
+        android:background="@drawable/category_selector_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hotel_ad"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/hotelCheckInDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="date"
+        android:hint="@string/check_in_tarihi"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/hotelCheckOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="date"
+        android:hint="@string/check_out_tarihi"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/hotelCheckInTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="@string/check_in_zaman"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/hotelCheckOutTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="@string/check_out_zaman"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/restaurantLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Location"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iptal"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:backgroundTint="@color/textColor"/>
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/kaydet"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/primaryColor"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".ui.fragment.LocationSelectionFragment">
+
+    <!-- Ülke Seçimi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ulke"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/autoCompleteCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:inputType="none"
+            android:background="@drawable/category_selector_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Şehir Seçimi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/sehir"
+        app:layout_constraintTop_toBottomOf="@id/countryInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/autoCompleteCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:inputType="none"
+            android:background="@drawable/category_selector_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Onay Butonu -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmSelection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/secimi_kabul_et"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/cityInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/primaryColor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

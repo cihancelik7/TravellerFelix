@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/bottomSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Transport Plan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <!-- Transport Type Seçimi -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Transport Type:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/transportTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/transport_types"
+        android:padding="8dp"
+        android:background="@drawable/category_selector_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"/>
+
+    <!-- Eğer "Other" Seçilirse Gözükecek EditText -->
+    <EditText
+        android:id="@+id/otherTransportType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Enter Other Transport Type"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/ticketName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Hop on Hop off Ticket"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/ticketDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Date (YYYY-MM-DD)"
+        android:layout_marginTop="8dp"
+        android:inputType="date"
+        android:padding="8dp"/>
+    <!-- Reservation Time -->
+    <EditText
+        android:id="@+id/reservationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="Reservation Time (HH:MM)"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+
+    <!-- Departure Time -->
+    <EditText
+        android:id="@+id/transportDepartureTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="Departure Time (HH:MM)"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+
+    <!-- Butonlar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iptal"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:backgroundTint="@color/textColor"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaydet"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/primaryColor"/>
+    </LinearLayout>
+
+</LinearLayout>

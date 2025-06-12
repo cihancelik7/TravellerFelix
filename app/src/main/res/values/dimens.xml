@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="date_selector_padding">16dp</dimen>
+    <dimen name="dialog_corner_radius">16dp</dimen>
+</resources>

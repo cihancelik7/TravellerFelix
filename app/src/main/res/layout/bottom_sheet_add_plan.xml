@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/bottomSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yeni_plan_ekle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/bottomSheetDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lutfen_yeni_planiniza_uygun_kategoriyi_secin"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/categoryRadioGroup"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/category_selector_with_line"
+            android:padding="10dp"
+            android:text="Restaurant 🍽"
+            android:tag="Restaurant"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_selector_with_line"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Hotel           🏨"
+            android:tag="Hotel"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_selector_with_line"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Museum     🏛"
+            android:tag="Museum"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/category_selector_with_line"
+            android:padding="10dp"
+            android:text="Transport   🚆"
+            android:tag="Transport"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/category_selector_with_line"
+            android:padding="10dp"
+            android:text="Rent a Car  🚗"
+            android:tag="Rent a Car"
+            android:textColor="@color/textColor" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:paddingTop="16dp">
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/iptal"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/textColor"/>
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/devam"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/primaryColor"/>
+
+
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+
+
+
+</LinearLayout>

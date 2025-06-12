@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravellerFelix" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item> <!-- İsteğe bağlı -->
+
+    </style>
+
+    <style name="Theme.TravellerFelix" parent="Base.Theme.TravellerFelix" />
+
+
+    <style name="KVKKBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/KVKKBottomSheetStyle</item>
+    </style>
+
+    <style name="KVKKBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_kvkk_dialog_rounded</item>
+    </style>
+
+    
+</resources>

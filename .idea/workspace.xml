@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$USER_HOME$/.gradle/caches/8.10.2/transforms/f616f65797d730b47630d7637224b171/transformed/material-1.10.0/res/layout/design_bottom_navigation_item.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_about.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_hotel.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_museum.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_plan.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_rent.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_restaurant.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_transport.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_clear_data.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_feedback.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_language.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_tomorrow_plan.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/date_item.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_kvkk.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_location_permission.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dropdown_item.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_bottom_sheet_add_note.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_day_plan.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_location_selection.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_nearby_places.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_notes.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings_bottom_sheet.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_hotel.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_museum.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_nearby_place.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_note.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_onboarding_page.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_rent.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_restaurant.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_tomorrow_plan.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_transportation.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+        <config>
+          <theme>@style/Theme.TravellerFelix</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f674cf0d-63f6-44ab-8d04-59a6be3841e7" name="Changes" comment="some ui problems fixed">
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidPluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLifecycleLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLifecycleLivedataLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLifecycleViewmodelLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxNavigationFragmentLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxNavigationLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxNavigationUiLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$KotlinPluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$KotlinxCoroutinesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$KotlinxLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$MaterialLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$RoomLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLifecycleLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLifecycleLivedataLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLifecycleViewmodelLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxNavigationFragmentLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxNavigationLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxNavigationUiLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$KotlinxCoroutinesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$KotlinxLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$MaterialLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$RoomLibraryAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/metadata.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/sources/org/gradle/accessors/dm/LibrariesForLibs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/4514d41e57fbe150f6c047c56d0498e7de5e9f1f/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.10.2/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/TravellerFelix_Backup.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/travellerfelix/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/travellerfelix/service/TomorrowPlanAlarmReceiverTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/CalendarAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/CityAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/DayPlanAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/NearbyPlacesAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/NoteAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/OnboardingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/PlaceAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/ReminderAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/TomorrowPlanAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/adapter/TransportAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/AboutBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/BottomSheetAddNoteFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/CategorySelectionBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/ClearDataBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/FeedbackBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/HotelBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/LanguageBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/MuseumBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/RentBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/RestaurantBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/SettingsBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/TomorrowPlanBottomSheetDialogFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/bottomsheet/TransportBottomSheet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/CityDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/CountryDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/DayPlanDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/HotelDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/MuseumDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/NoteDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/PlaceDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/ReminderDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/RentDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/RestaurantDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/dao/TransportDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/database/TravelDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/AllDayPlans.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/City.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/CityCountryProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Country.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/DayItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/DayPlan.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/DeviceLocation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Feedback.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Hotel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Museum.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/NearbyPlace.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Note.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/OnboardingItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/OnboardingPage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Place.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Reminder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Rent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Restaurant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/TomorrowPlanItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/local/model/Transport.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/GeoNamesApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/NearbyPlacesApiService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/RetrofitClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/model/GeoNamesCityResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/model/GeoNamesResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/model/NearbyPlaceResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/remote/model/PlacesApiResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/CityRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/CountryRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/FeedbackRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/LocationRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/NearbyRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/NoteRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/TomorrowPlanRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/data/repository/TravelRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/dialog/KvkkDialogFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/service/TomorrowPlanAlarmReceiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/service/TomorrowPlanNotificationScheduler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/activity/LauncherActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/activity/OnboardingActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/BottomSheetAddPlanFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/CalendarFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/DayPlanFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/LocationPermissionDialogFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/LocationSelectionFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/NearbyPlacesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/ui/fragment/NotesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/CategoryFilterHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/Constants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/DateUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/LanguageUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/NotificationHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/PermissionManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/PlaceDiffCallback.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/utils/PreferenceHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/CalendarViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/CalendarViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/DayPlanDetailsViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/DayPlanDetailsViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/DayPlanViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/FeedbackViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/FeedbackViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/HotelViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/HotelViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/LocationViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/LocationViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/MuseumViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/MuseumViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/NearbyViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/NearbyViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/NoteViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/NoteViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/ReminderViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/RentViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/RentViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/RestaurantViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/RestaurantViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/SharedCalendarViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/SharedLocationViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/TomorrowPlanViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/TomorrowPlanViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/TransportViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/travellerfelix/viewmodel/TransportViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/bottom_nav_item_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/addevent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_add_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_circle_notifications_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_edit_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_home_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_keyboard_arrow_down_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_bottomsheet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_dropdown_soft.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gradient_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_kvkk_card.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_kvkk_dialog_rounded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_nav_item_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bottomsheet_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calendar_gpt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calendarview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/category_button_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/category_selector_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/category_selector_with_line.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/clipboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_dialog_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/date_item_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/date_item_default_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/default_date_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dialog_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dot_active.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dot_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dot_inactive.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edittext_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/googlemaps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/location.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nearby_gpt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/no_button_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rotate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selected_date_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/soft_shadow_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/start_planner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yes_button_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_about.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_hotel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_museum.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_rent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_restaurant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_add_transport.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_clear_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_feedback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_tomorrow_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/date_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_kvkk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_location_permission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dropdown_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottom_sheet_add_note.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_day_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_location_selection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_nearby_places.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings_bottom_sheet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_hotel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_museum.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_nearby_place.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_note.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_onboarding_page.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_rent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_restaurant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tomorrow_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_transportation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/category_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-it/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-sv/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/travellerfelix/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/cihancelik/.android/avd/Pixel_9_Pro_API_Baklava.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TravellerFelix" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TravellerFelix" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TravellerFelix" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TravellerFelix" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cihancelik7&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cihancelik7/TravellerFelix.git&quot;,
+    &quot;accountId&quot;: &quot;cb8f62e0-2312-43a0-8a1f-89b774dad570&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2w8QnZw8xKYlDnJAeiCTepQmCTC" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "Android Instrumented Tests.TomorrowPlanAlarmReceiverTest (1).executor": "Run",
+    "Android Instrumented Tests.TomorrowPlanAlarmReceiverTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/cihancelik/Desktop/TravellerFelix_Backup/app/src/main/res/drawable",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="android.template.1817307078">
+      <recent name="com.example.travellerfelix" />
+    </key>
+    <key name="android.template.1959764039">
+      <recent name="com.example.travellerfelix.ui.activity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="TravellerFelix.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TomorrowPlanAlarmReceiverTest (1)" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="TravellerFelix.app" />
+      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="TomorrowPlanAlarmReceiverTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="RETENTION_ENABLED" value="No" />
+      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
+      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TomorrowPlanAlarmReceiverTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="TravellerFelix.app" />
+      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.example.travellerfelix.service.TomorrowPlanAlarmReceiverTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="RETENTION_ENABLED" value="No" />
+      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
+      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.TomorrowPlanAlarmReceiverTest" />
+        <item itemvalue="Android Instrumented Tests.TomorrowPlanAlarmReceiverTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f674cf0d-63f6-44ab-8d04-59a6be3841e7" name="Changes" comment="" />
+      <created>1745420888247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745420888247</updated>
+    </task>
+    <task id="LOCAL-00001" summary="new page is creating">
+      <option name="closed" value="true" />
+      <created>1745428268391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745428268391</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new page is creating">
+      <option name="closed" value="true" />
+      <created>1745447520612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745447520612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="nearby location classes already finished, user can see nearby places, same like categories">
+      <option name="closed" value="true" />
+      <created>1745664499070</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745664499070</updated>
+    </task>
+    <task id="LOCAL-00004" summary="nearby places working correctly, settings flashcard will create!">
+      <option name="closed" value="true" />
+      <created>1745705045903</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745705045903</updated>
+    </task>
+    <task id="LOCAL-00005" summary="settings bottom sheet created">
+      <option name="closed" value="true" />
+      <created>1746109713672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746109713672</updated>
+    </task>
+    <task id="LOCAL-00006" summary="settings bottom sheet created">
+      <option name="closed" value="true" />
+      <created>1746312723478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746312723478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="per languages option string.xml classes created, all xml strings turning per languages">
+      <option name="closed" value="true" />
+      <created>1746384968029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746384968029</updated>
+    </task>
+    <task id="LOCAL-00008" summary="turkis languages text's created string.xml class">
+      <option name="closed" value="true" />
+      <created>1746717143938</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746717143938</updated>
+    </task>
+    <task id="LOCAL-00009" summary="english were added">
+      <option name="closed" value="true" />
+      <created>1746915629426</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746915629426</updated>
+    </task>
+    <task id="LOCAL-00010" summary="some ui problems fixed">
+      <option name="closed" value="true" />
+      <created>1747412312936</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747412312936</updated>
+    </task>
+    <task id="LOCAL-00011" summary="some ui problems fixed">
+      <option name="closed" value="true" />
+      <created>1747412451616</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747412451616</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fr and it languages added">
+      <option name="closed" value="true" />
+      <created>1747492177858</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747492177858</updated>
+    </task>
+    <task id="LOCAL-00013" summary="onboarding screen added">
+      <option name="closed" value="true" />
+      <created>1747662693857</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747662693857</updated>
+    </task>
+    <task id="LOCAL-00014" summary="onboarding screen added">
+      <option name="closed" value="true" />
+      <created>1747952823482</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747952823482</updated>
+    </task>
+    <task id="LOCAL-00015" summary="onboarding screen added">
+      <option name="closed" value="true" />
+      <created>1748326052841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748326052841</updated>
+    </task>
+    <task id="LOCAL-00016" summary="notification backend written already">
+      <option name="closed" value="true" />
+      <created>1748615292545</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748615292545</updated>
+    </task>
+    <task id="LOCAL-00017" summary="notification backend written already">
+      <option name="closed" value="true" />
+      <created>1748686931051</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748686931051</updated>
+    </task>
+    <task id="LOCAL-00018" summary="notification service working correctly">
+      <option name="closed" value="true" />
+      <created>1748783342724</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748783342724</updated>
+    </task>
+    <task id="LOCAL-00019" summary="now ,  we can send notification but if we dont have plans for tomorrow system will not send any notifications">
+      <option name="closed" value="true" />
+      <created>1749127865393</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749127865393</updated>
+    </task>
+    <task id="LOCAL-00020" summary="some ui problems fixed">
+      <option name="closed" value="true" />
+      <created>1749377677685</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749377677685</updated>
+    </task>
+    <task id="LOCAL-00021" summary="some ui problems fixed">
+      <option name="closed" value="true" />
+      <created>1749391562032</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749391562032</updated>
+    </task>
+    <task id="LOCAL-00022" summary="some ui problems fixed">
+      <option name="closed" value="true" />
+      <created>1749477301188</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749477301188</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new page is creating" />
+    <MESSAGE value="nearby location classes already finished, user can see nearby places, same like categories" />
+    <MESSAGE value="nearby places working correctly, settings flashcard will create!" />
+    <MESSAGE value="settings bottom sheet created" />
+    <MESSAGE value="per languages option string.xml classes created, all xml strings turning per languages" />
+    <MESSAGE value="turkis languages text's created string.xml class" />
+    <MESSAGE value="english were added" />
+    <MESSAGE value="fr and it languages added" />
+    <MESSAGE value="onboarding screen added" />
+    <MESSAGE value="notification backend written already" />
+    <MESSAGE value="notification service working correctly" />
+    <MESSAGE value="now ,  we can send notification but if we dont have plans for tomorrow system will not send any notifications" />
+    <MESSAGE value="some ui problems fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="some ui problems fixed" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.example.travellerfelix">
+          <value>
+            <CheckInfo lastCheckTimestamp="1749714202877" />
+          </value>
+        </entry>
+        <entry key="com.example.travellerfelix.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1749714202877" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

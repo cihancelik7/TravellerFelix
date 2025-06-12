@@ -1,0 +1,53 @@
+# Android specific
+/build/
+.gradle/
+.idea/
+*.iml
+local.properties
+
+# Kotlin/Java compile output
+/out/
+
+# Firebase and API keys
+google-services.json
+
+# macOS
+.DS_Store
+
+# Logs and generated metadata
+*.log
+*.bin
+*.lock
+*.probe
+*.hprof
+*.tmp
+
+# Android Studio VCS cache and indexing
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Gradle wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# IntelliJ / Android Studio run configurations
+.idea/runConfigurations/
+
+# Build system outputs
+fileHashes.*
+executionHistory.*
+resourceHashesCache.*
+outputFiles.*
+last-build.*
+
+# Unversioned image assets (optional: if not part of app)
+*.png
+*.webp
+
+# Miscellaneous
+*.orig
+*.rej

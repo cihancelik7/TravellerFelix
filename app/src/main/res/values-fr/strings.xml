@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">TravellerFelix</string>
+    <string name="hello_blank_fragment">Bonjour Fragment Vide</string>
+    <string name="bu_uygulama_planlarinizi_kolaylastirmak_icin_gelistirilmistir_kullandiginiz_icin_tesekkur_ederiz">Cette application est conçue pour faciliter vos plans. Merci de l\'utiliser !</string>
+    <string name="_2025_travellerfelix_tum_haklarisaklidir">© 2025 TravellerFelix. Tous droits réservés.</string>
+    <string name="hotel_ad">Nom de l\'hôtel</string>
+    <string name="check_in_tarihi">Date d\'arrivée</string>
+    <string name="check_out_tarihi">Date de départ</string>
+    <string name="check_in_zaman">Heure d\'arrivée</string>
+    <string name="check_out_zaman">Heure de départ</string>
+    <string name="iptal">Annuler</string>
+    <string name="kaydet">Enregistrer</string>
+    <string name="hotel_plan_ekle">Ajouter un plan hôtel</string>
+    <string name="muze_plan_ekle">Ajouter un plan musée</string>
+    <string name="muze_ad">Nom du musée</string>
+    <string name="ziyaret_gun">Jour de visite</string>
+    <string name="acilis_kapanis_saati_hh_mm">Heures d\'ouverture/fermeture (HH:MM)</string>
+    <string name="yeni_plan_ekle">Ajouter un nouveau plan</string>
+    <string name="lutfen_yeni_planiniza_uygun_kategoriyi_secin">Veuillez choisir la catégorie appropriée pour votre nouveau plan</string>
+    <string name="devam">Continuer</string>
+    <string name="arac_kiralama_plan">Plan de location de voiture</string>
+    <string name="firma_ad">Nom de l\'entreprise (ex : Sixt, Avis)</string>
+    <string name="arac_modeli">Modèle de voiture (ex : BMW X5, Tesla Model 3)</string>
+    <string name="kiralama_baslangic_tarihi">Date de début de location</string>
+    <string name="kiralama_bitis_tarihi">Date de fin de location</string>
+    <string name="teslim_alma_saati_hh_mm">Heure de retrait (HH:MM)</string>
+    <string name="teslim_etme_saati_hh_mm">Heure de retour (HH:MM)</string>
+    <string name="teslim_alinacak_yer">Lieu de retrait (ex : Aéroport d\'Istanbul)</string>
+    <string name="teslim_edilecek_yer">Lieu de retour (ex : Aéroport d\'Istanbul)</string>
+    <string name="tum_verileri_silmek_stediginize_emin_misiniz">Êtes-vous sûr de vouloir supprimer toutes les données ?</string>
+    <string name="evet">Oui</string>
+    <string name="hay_r">Non</string>
+    <string name="yorum_tavsiye"><![CDATA[Retour & Suggestion]]></string>
+    <string name="buraya_dusuncelerinizi_yazabilirsiniz">Vous pouvez écrire vos pensées ici...</string>
+    <string name="gonder">Envoyer</string>
+    <string name="dil_seciniz">Choisir la langue</string>
+    <string name="turkce">Turc</string>
+    <string name="ingilizce">Anglais</string>
+    <string name="fransizca">Français</string>
+    <string name="isvecce">Suédois</string>
+    <string name="italyanca">Italien</string>
+    <string name="uygula">Appliquer</string>
+    <string name="notunuzu_yazin">Écrivez votre note...</string>
+    <string name="ulke">Pays</string>
+    <string name="sehir">Ville</string>
+    <string name="secimi_kabul_et">Accepter la sélection</string>
+    <string name="hotel">Hôtel</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="muze">Musée</string>
+    <string name="toplu_tasima">Transport public</string>
+    <string name="kiralik_arac">Voiture de location</string>
+    <string name="listele">Lister</string>
+    <string name="daha_fazla_goster">Afficher plus</string>
+    <string name="verileri_temizle">Effacer les données</string>
+    <string name="dil_secenegi">Option de langue</string>
+    <string name="rezervasyon_saati">Heure de réservation :</string>
+    <string name="yapildi">Fait !</string>
+    <string name="acilis_kapanis">Ouverture - Fermeture</string>
+    <string name="not_icerigi">Contenu de la note</string>
+    <string name="teslim_alis_saati">Heure de retrait :</string>
+    <string name="teslim_edis_saati">Heure de retour :</string>
+    <string name="teslim_alis_konumu">Lieu de retrait :</string>
+    <string name="teslim_edis_konumu">Lieu de retour :</string>
+    <string name="arac_kiralama">Location de voiture</string>
+    <string name="rezerve_gunler">Jour(s) réservé(s) :</string>
+    <string name="kalkis_saati">Heure de départ :</string>
+    <string name="ana_sayfa">Accueil</string>
+    <string name="yakin_cevre">À proximité</string>
+    <string name="notlar">Notes</string>
+    <string name="kategoriler">Catégories</string>
+    <string name="hakkinda">À propos</string>
+    <string name="henuz_eklenmis_bir_not_yok">Aucune note ajoutée pour le moment ☁️</string>
+    <string name="sehir_ulke">Ville / Pays</string>
+
+    <string-array name="transport_types">
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Vol</item>
+        <item>Bateau</item>
+        <item>Métro</item>
+        <item>Tramway</item>
+        <item>Autre</item>
+    </string-array>
+</resources>

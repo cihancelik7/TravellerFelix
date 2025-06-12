@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#037F08</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accentColor">#FF5722</color>
+    <color name="textColor">#37474F</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="nav_selected_bg">#A5D6A7</color> <!-- Mesela açık yeşil -->
+    <color name="nav_unselected_bg">#FFFFFF</color> <!-- Beyaz -->
+    <color name="softWhite">#FAFAFA</color> <!-- Beyaz -->
+</resources>
+

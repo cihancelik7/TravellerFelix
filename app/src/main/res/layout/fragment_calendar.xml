@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Tarih Seçici (Yatay Scrollable) -->
+    <LinearLayout
+        android:id="@+id/dateSelectorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_gradient_bottom"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dateRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/dateSelectorContainer" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cityAndState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@id/categorySelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateSelectorContainer">
+
+        <!-- Tek TextView: City / Country -->
+        <TextView
+            android:id="@+id/cityAndCountryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sehir_ulke"
+            android:textColor="@color/textColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iconsGroup" />
+
+        <!-- Sağdaki ikonlar -->
+        <LinearLayout
+            android:id="@+id/iconsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/setCalendar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/time" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/settings" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Kategori Seçici (Kategori İsmi ve Aşağı Ok Butonu) -->
+    <LinearLayout
+        android:id="@+id/categorySelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/category_selector_with_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/cityAndState"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/selectedCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="8dp"
+            android:text="All"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/categoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/categoryAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="4dp"
+                android:text="@string/kategoriler"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/categoryDropdown"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="Dropdown Arrow"
+                android:src="@drawable/baseline_keyboard_arrow_down_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Kategori Dropdown Menü (Gizli Başlangıçta) -->
+    <LinearLayout
+        android:id="@+id/categoryDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/category_selector_bg"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/categorySelector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Bu TextView'ler dinamik olarak Java/Kotlin kodundan doldurulabilir -->
+
+        <TextView
+            android:id="@+id/categoryOptionHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Hotel"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/categoryOptionRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Rent a Car"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/categoryOptionMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Museum"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/categoryOptionTransport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Transport"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/categoryOptionRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Restaurant"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/categoryOptionAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="All"
+            android:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+    <!-- İçerik Bölümü -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/categoryDropdownMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/calendarEmptyView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/hello_blank_fragment"
+        android:src="@drawable/calendarview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categorySelector" />
+
+    <TextView
+        android:id="@+id/emptyCalendarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basla"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/calendarEmptyView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/addEventButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/start_planner"
+        android:contentDescription="Add event"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/emptyCalendarText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

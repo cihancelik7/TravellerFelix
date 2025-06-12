@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomsheet.BottomSheetAddNoteFragment">
+
+
+    <EditText
+        android:id="@+id/noteContentEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/notunuzu_yazin"
+        android:background="@drawable/category_selector_bg"
+        android:minHeight="100dp"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kaydet"
+        android:backgroundTint="@color/accentColor"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/noteContentEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancelNoteButton"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/cancelNoteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/iptal"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/noteContentEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/saveNoteButton"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginTop="16dp"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

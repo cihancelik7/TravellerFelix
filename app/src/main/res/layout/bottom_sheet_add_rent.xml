@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/bottomSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arac_kiralama_plan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/carRentalBrandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/firma_ad"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+    <!-- Araç Modeli -->
+    <EditText
+        android:id="@+id/carModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/arac_modeli"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/rentStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/kiralama_baslangic_tarihi"
+        android:padding="8dp"
+        android:inputType="date"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/rentEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/kiralama_bitis_tarihi"
+        android:inputType="date"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Pickup Time -->
+    <EditText
+        android:id="@+id/pickupTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="@string/teslim_alma_saati_hh_mm"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Drop-off Time -->
+    <EditText
+        android:id="@+id/dropOffTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:inputType="time"
+        android:hint="@string/teslim_etme_saati_hh_mm"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Pickup Location -->
+    <EditText
+        android:id="@+id/pickupLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/teslim_alinacak_yer"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Drop-off Location (Opsiyonel) -->
+    <EditText
+        android:id="@+id/dropOffLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="@string/teslim_edilecek_yer"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Butonlar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iptal"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:backgroundTint="@color/textColor"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaydet"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/primaryColor"/>
+    </LinearLayout>
+
+</LinearLayout>

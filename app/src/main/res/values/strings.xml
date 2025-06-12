@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">TravellerFelix</string>
+
+    <!-- Eksik string ekleniyor -->
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
+    <string name="bu_uygulama_planlarinizi_kolaylastirmak_icin_gelistirilmistir_kullandiginiz_icin_tesekkur_ederiz">Bu uygulama planlarınızı kolaylaştırmak için geliştirilmiştir. Kullandığınız için teşekkür ederiz!</string>
+    <string name="_2025_travellerfelix_tum_haklarisaklidir">© 2025 TravellerFelix. Tüm hakları saklıdır.</string>
+    <string name="hotel_ad">Hotel Adı</string>
+    <string name="check_in_tarihi">Check-In Tarihi</string>
+    <string name="check_out_tarihi">Check-Out Tarihi</string>
+    <string name="check_in_zaman">Check-In Zamanı</string>
+    <string name="check_out_zaman">Check-Out Zamanı</string>
+    <string name="iptal">iptal</string>
+    <string name="kaydet">kaydet</string>
+    <string name="hotel_plan_ekle">Hotel Planı Ekle</string>
+    <string name="muze_plan_ekle">Müze Planı Ekle</string>
+    <string name="muze_ad">Müze Adı</string>
+    <string name="ziyaret_gun">Ziyaret Günü</string>
+    <string name="acilis_kapanis_saati_hh_mm">Açılış/Kapanış Saati (HH:MM)</string>
+    <string name="yeni_plan_ekle">Yeni Plan Ekle</string>
+    <string name="lutfen_yeni_planiniza_uygun_kategoriyi_secin">Lütfen Yeni Planınıza Uygun Kategoriyi Seçin</string>
+    <string name="devam">Devam</string>
+    <string name="arac_kiralama_plan">Araç Kiralama Planı</string>
+    <string name="firma_ad">Firma Adı (örn: Sixt, Avis)</string>
+    <string name="arac_modeli">Araç Modeli (örn: BMW X5, Tesla Model 3)</string>
+    <string name="kiralama_baslangic_tarihi">Kiralama Başlangıç Tarihi</string>
+    <string name="kiralama_bitis_tarihi">Kiralama Bitiş Tarihi</string>
+    <string name="teslim_alma_saati_hh_mm">Teslim Alma Saati (HH:MM)</string>
+    <string name="teslim_etme_saati_hh_mm">Teslim Etme Saati (HH:MM)</string>
+    <string name="teslim_alinacak_yer">Teslim Alınacak Yer (örn: İstanbul Havaalanı)</string>
+    <string name="teslim_edilecek_yer">Teslim Edilecek Yer (örn: İstanbul havaalanı)</string>
+    <string name="tum_verileri_silmek_stediginize_emin_misiniz">Tüm Verileri Silmek İstediğinize Emin Misiniz?</string>
+    <string name="evet">Evet</string>
+    <string name="hay_r">Hayır</string>
+    <string name="yorum_tavsiye"><![CDATA[Yorum & Tavsiye]]></string>
+    <string name="buraya_dusuncelerinizi_yazabilirsiniz">Buraya Dusuncelerinizi Yazabilirsiniz...</string>
+    <string name="gonder">Gönder</string>
+    <string name="dil_seciniz">Dil Seçiniz</string>
+    <string name="turkce">Türkçe</string>
+    <string name="ingilizce">İngilizce</string>
+    <string name="fransizca">Fransızca</string>
+    <string name="isvecce">İsveççe</string>
+    <string name="italyanca">İtalyanca</string>
+    <string name="uygula">Uygula</string>
+    <string name="notunuzu_yazin">Notunuzu Yazın..</string>
+    <string name="ulke">Ülke</string>
+    <string name="sehir">Şehir</string>
+    <string name="secimi_kabul_et">Seçimi Kabul Et</string>
+    <string name="hotel">Hotel</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="muze">Müze</string>
+    <string name="toplu_tasima">Toplu Taşıma</string>
+    <string name="kiralik_arac">Kiralık Araç</string>
+    <string name="listele">Listele</string>
+    <string name="daha_fazla_goster">Daha Fazla Goster</string>
+    <string name="verileri_temizle">Verileri Temizle</string>
+    <string name="dil_secenegi">Dil Seçeneği</string>
+    <string name="rezervasyon_saati">Rezervasyon Saati:</string>
+    <string name="yapildi">Yapıldı!</string>
+    <string name="acilis_kapanis">Açılış - Kapanış</string>
+    <string name="not_icerigi">Not içeriği</string>
+    <string name="teslim_alis_saati">Teslim alış Saati:</string>
+    <string name="teslim_edis_saati">Teslim Ediş Saati:</string>
+    <string name="teslim_alis_konumu">Teslim Alış Konumu:</string>
+    <string name="teslim_edis_konumu">Teslim Ediş Konumu:</string>
+    <string name="arac_kiralama">Araç Kiralama</string>
+    <string name="rezerve_gunler">Rezerve Gün(ler):</string>
+    <string name="kalkis_saati">Kalkış Saati:</string>
+    <string name="ana_sayfa">Ana Sayfa</string>
+    <string name="yakin_cevre">Yakın Çevre</string>
+    <string name="notlar">Notlar</string>
+    <string name="kategoriler">Kategoriler</string>
+    <string name="hakkinda">Hakkında</string>
+    <string name="henuz_eklenmis_bir_not_yok">Henüz eklenmiş bir not yok ☁️</string>
+    <string name="sehir_ulke">Şehir / Ülke</string>
+
+    <string name="onboarding_title_1">Tarihe Göre Plan Yap</string>
+    <string name="onboarding_desc_1">Takvim görünümünde her güne özel planlarını ekleyebilir, tarih bazlı gezi planlamanı kolayca yönetebilirsin.</string>
+
+    <string name="onboarding_title_2">Yakın Yerleri Keşfet</string>
+    <string name="onboarding_desc_2">Restoran, otel, müze gibi yakın yerleri harita üzerinde keşfet ve gezini zenginleştir.</string>
+
+    <string name="onboarding_title_3">Notlarını Tut</string>
+    <string name="onboarding_desc_3">Gezdiğin yerlerle ilgili kişisel notlar alarak hatıralarını kaydetmeyi unutma!</string>
+
+    <string name="consent_kvkk_text">
+    <![CDATA[
+    TravellerFelix olarak gizliliğinizi önemsiyoruz. Uygulamanın işlevselliğini artırmak amacıyla bazı kişisel verilere erişim izni talep etmekteyiz:<br/><br/>
+    • Konum Verisi: Seyahat planlarınızı daha iyi önermek ve yakındaki yerleri gösterebilmek için kullanılır.<br/>
+    • Bildirim Erişimi: Hatırlatmalar, önemli uyarılar ve plan güncellemeleri gibi bilgileri size zamanında iletmek amacıyla kullanılır.<br/><br/>
+    Bu veriler yalnızca uygulama içinde, sizin deneyiminizi iyileştirmek için kullanılır. Üçüncü şahıslarla paylaşılmaz ve yalnızca açık rızanız doğrultusunda işlenir.<br/><br/>
+    Devam etmek için lütfen KVKK ve Gizlilik Politikasını okuduğunuzu ve kabul ettiğinizi onaylayın.
+    ]]>
+</string>
+
+
+    <string name="basla">Başla</string>
+    <string name="kullanici_sozlesmesini_oku">Kullanıcı Sözleşmesini Oku!</string>
+    <string name="reddet">Reddet</string>
+    <string name="kabul_et">Kabul Et</string>
+    <string name="yarinki_planlariniz">📅 Yarınki Planlarınız</string>
+    <string name="daha_sonra">Daha Sonra</string>
+
+    <string-array name="transport_types">
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Flight</item>
+        <item>Ship</item>
+        <item>Metro</item>
+        <item>Tram</item>
+        <item>Other</item>
+    </string-array>
+</resources>

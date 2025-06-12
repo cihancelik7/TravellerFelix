@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/softWhite">
+
+    <TextView
+        android:id="@+id/onboardingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takvim ile planlarını oluştur"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/onboardingImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/calendar_gpt"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/onboardingDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Günlük planlarını görselleştir ve kolayca takip et."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_background"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yorum_tavsiye"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/feedbackMessage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/buraya_dusuncelerinizi_yazabilirsiniz"
+        android:background="@drawable/edittext_background"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:maxLines="6"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gonder"
+        android:textColor="@color/softWhite"
+        android:background="@drawable/yes_button_bg"/>
+</LinearLayout>

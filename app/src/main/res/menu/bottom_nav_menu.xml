@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calendarFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/ana_sayfa" />
+
+    <item
+        android:id="@+id/nearbyFragment"
+        android:icon="@drawable/location"
+        android:title="@string/yakin_cevre" />
+
+    <item
+        android:id="@+id/notesFragment"
+        android:icon="@drawable/addevent"
+        android:title="@string/notlar" />
+</menu>

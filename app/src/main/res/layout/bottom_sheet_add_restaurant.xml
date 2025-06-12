@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/bottomSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Restaurant Plan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/restaurantName"
+        android:layout_width="match_parent"
+        android:background="@drawable/category_selector_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Reataurant Name"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/restaurantReservationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Reservation Date (YYYY-MM-DD)"
+        android:layout_marginTop="8dp"
+        android:inputType="time"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/restaurantReservationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Reservation Time (HH.MM)"
+        android:layout_marginTop="8dp"
+        android:inputType="time"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/restaurantOpenCloseTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_selector_bg"
+        android:hint="Open/Close Time (HH.MM)"
+        android:layout_marginTop="8dp"
+        android:inputType="time"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iptal"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/textColor"/>
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaydet"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColor"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
