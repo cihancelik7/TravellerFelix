@@ -30,22 +30,15 @@ object TomorrowPlanNotificationScheduler {
 
         val now = System.currentTimeMillis()
 
+        // ✅ GERÇEK VERSİYON: Her gece saat 22:00'de alarm kur
         val calendar = Calendar.getInstance().apply {
             timeInMillis = now
-            add(Calendar.MINUTE, 1) // ✅ TEST: 1 dakika sonrasına alarm kur
-        }
-
-        /*
-        // 💤 GERÇEK VERSİYON (ileride aktifleştirmek için):
-        // Bu blok 22:00'de bildirim göndermek üzere hazırlanmıştır
-        val calendar = Calendar.getInstance().apply {
-            timeInMillis = System.currentTimeMillis()
-            add(Calendar.DATE, 0) // Bugün
+            add(Calendar.DATE, 1) // Programdan bir gün öncesi için yarını hedef alıyoruz
             set(Calendar.HOUR_OF_DAY, 22)
             set(Calendar.MINUTE, 0)
             set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
         }
-        */
 
         val triggerTime = calendar.timeInMillis
 
